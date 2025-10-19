@@ -9,14 +9,17 @@ To write a Python program that calculates the **sum of all elements** in a list.
 3. Print the result.
 
 ## 🧾 Program
-
-Add code here
+```
+numbers = [10, 20, 30, 40, 50]
+total = sum(numbers)
+print("Sum of the list items is:", total)
+```
 
 ## Output
+<img width="1920" height="1080" alt="Screenshot 2025-10-19 160308" src="https://github.com/user-attachments/assets/0bf20f91-566a-40e0-ba5f-5effde590f42" />
 
 ## Result
-
-
+Thus To write a Python program that calculates the **sum of all elements** in a list has been executed sucessfully.
 
 # Regex in Python: Filter Words Without the Letter 'e'
 
@@ -34,12 +37,24 @@ To write a Python program that filters out and returns all elements from a list 
 5. Print the final filtered list.
 
 ## 🧾 Program
-Add code here
+```
+import re
+
+items = ['goal', 'new', 'user', 'sit', 'eat', 'dinner']
+l1 = []
+
+for i in items:
+    if not re.search(r'e', i):
+        l1.append(i)
+
+print("Filtered words without 'e':", l1)
+```
 ## Output
+<img width="1920" height="1080" alt="Screenshot 2025-10-19 160551" src="https://github.com/user-attachments/assets/d6355b5f-5111-4f18-979a-2b58ef5c5ed5" />
 
 ## Result
 
-
+Thus To write a Python program that filters out and returns all elements from a list **that do not contain the letter `'e'`**, using **regular expressions (regex)** has been executed sucessfully.
 
 
 # 🧹 Strings-Remove Nth Index Character from a String
@@ -58,13 +73,26 @@ To write a Python program that accepts a string and removes the character at a s
 8. Print the final result.
 
 ## 💻 Program
-Add Code Here
+```
+def remove(string):
+    n = int(input("Enter the index to remove: "))
+    a = ""
+    for i in range(len(string)):
+        if i != n:
+            a += string[i]
+    return a
+
+input_string = input("Enter a string: ")
+result = remove(input_string)
+print("String after removal:", result)
+```
 
 ## Output
+<img width="1920" height="1080" alt="Screenshot 2025-10-19 161011" src="https://github.com/user-attachments/assets/fc1382e2-3dc9-46ae-b344-4bb764b4d0b9" />
 
 ## Result
 
-
+Thus To write a Python program that accepts a string and removes the character at a specified index has been executed sucessfully
 
 # Strings-Palindrome Check in Python (Without Built-in Functions)
 
@@ -80,13 +108,22 @@ To write a Python program to check whether the string `"google"` is a **palindro
 4. Execute the program.
 
 ## 🧾 Program
+```
+string = "google"
+reversed_string = string[::-1]
 
+if string == reversed_string:
+    print(f'"{string}" is a palindrome.')
+else:
+    print(f'"{string}" is not a palindrome.')
+```
 Add code here
 
 ## Output
+<img width="1920" height="1080" alt="Screenshot 2025-10-19 161223" src="https://github.com/user-attachments/assets/d9d7241d-08f0-4a9c-9606-fbee03007374" />
 
 ## Result
-
+Thus To write a Python program to check whether the string `"google"` is a **palindrome** or not, without using built-in palindrome checking functions has been executed sucessfully.
 
 
 # Tuple in Python: Check Element Existence
@@ -101,8 +138,20 @@ To write a Python program that checks if the element `'n'` and the element `8` e
 4. Print the results.
 
 ## 🧾 Program
-Add code here
+```
+x = ('a', 'b', 'n', 4, 8, 9)
+
+# Check if 'n' exists
+exists_n = 'n' in x
+# Check if 8 exists
+exists_8 = 8 in x
+
+print(f"'n' exists in tuple: {exists_n}")
+print(f"8 exists in tuple: {exists_8}")
+```
 
 ## Output
+<img width="1920" height="1080" alt="Screenshot 2025-10-19 161501" src="https://github.com/user-attachments/assets/afa6d513-e789-4f94-9e04-9cb010b7510a" />
 
 ## Result
+Thus To write a Python program that checks if the element `'n'` and the element `8` exist within a given tuple has been executed sucessfully.
